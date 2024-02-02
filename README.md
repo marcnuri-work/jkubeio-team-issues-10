@@ -33,7 +33,10 @@ Users have requested a variety of features on top of our current Helm support.
 
 Some of them are:
 - Helm: Store charts in chart repository (k8s:helm-repo-index)
-  https://github.com/eclipse/jkube/issues/625 
+  https://github.com/eclipse/jkube/issues/625
+- Helm: Examine chart for possible issues (k8s:helm-lint)
+  [K8S-HELM-LINT](K8S-HELM-LINT.md)
+  https://github.com/eclipse/jkube/issues/2613
 
 ### Helm Maven/Gradle Plugin
 
