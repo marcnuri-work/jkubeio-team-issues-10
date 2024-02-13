@@ -39,6 +39,6 @@ An integration test proves that the task can be executed both, with a successful
 
 ### Documentation
 
-The documentation exposes for each of the Maven, Gradle, Kubernetes, and OpenShift plugins reflects the new lint goal/task.
+The documentation exposes for each of the Maven, Gradle, Kubernetes, and OpenShift plugins the new lint goal/task.
 
 It includes a section with the linting options that can be provided in the `HelmConfig` argument and properties.
