@@ -46,6 +46,9 @@ The list of proposed features is:
 - Helm: Run tests for a Helm release (k8s:helm-test)<br/>
   [K8S-HELM-TEST](K8S-HELM-TEST.md)<br/>
   https://github.com/eclipse/jkube/issues/2667
+- Helm: Update chart's on-disk dependencies (k8s:helm-dependency-update)<br/>
+  [K8S-HELM-DEPENDENCY-UPDATE](K8S-HELM-DEPENDENCY-UPDATE.md)<br/>
+  https://github.com/eclipse/jkube/issues/2110
 
 ### Helm Maven/Gradle Plugin
 

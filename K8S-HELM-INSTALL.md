@@ -10,7 +10,9 @@ As an Eclipse JKube user, I want to be able to install the chart JKube generates
 
 ### JKube Kit
 
-JKube Kit exposes a new method `install` that installs the chart available in the coordinates (output directory, helm type, and so on -see `resolveTarballFile`-) provided in the `HelmConfig` argument.
+JKube Kit exposes a new method `install` that installs the **exploded** chart available in the coordinates (output directory, helm type, and so on -see `resolveTarballFile`-) provided in the `HelmConfig` argument.
+
+The chart should have been previously generated using the `generateHelmCharts` method.
 
 - The installation is performed by executing [helm-java `install` command](https://github.com/manusa/helm-java#install).
 - The user is able to provide the following installation options through the HelmConfig:
