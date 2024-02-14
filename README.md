@@ -38,11 +38,14 @@ The list of proposed features is:
   [K8S-HELM-LINT](K8S-HELM-LINT.md)<br/>
   https://github.com/eclipse/jkube/issues/2613
 - Helm: Install chart archive (k8s:helm-install)<br/>
-  [K8s-HELM-INSTALL](K8S-HELM-INSTALL.md)<br/>
+  [K8S-HELM-INSTALL](K8S-HELM-INSTALL.md)<br/>
   https://github.com/eclipse/jkube/issues/2663
 - Helm: Uninstall chart archive (k8s:helm-uninstall)<br/>
-  [K8s-HELM-UNINSTALL](K8S-HELM-UNINSTALL.md)<br/>
+  [K8S-HELM-UNINSTALL](K8S-HELM-UNINSTALL.md)<br/>
   https://github.com/eclipse/jkube/issues/2666
+- Helm: Run tests for a Helm release (k8s:helm-test)<br/>
+  [K8S-HELM-TEST](K8S-HELM-TEST.md)<br/>
+  https://github.com/eclipse/jkube/issues/2667
 
 ### Helm Maven/Gradle Plugin
 

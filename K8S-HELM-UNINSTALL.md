@@ -15,9 +15,9 @@ JKube Kit exposes a new method `uninstall` that uninstalls the chart release wit
 The chart should have been previously installed using the `install` method.
 
 - The uninstallation is performed by executing [helm-java `uninstall` command](https://github.com/manusa/helm-java#uninstall).
-- The user is able to provide the following installation/uninstallation options through the HelmConfig:
-  - `installName`: `jkube.helm.install.name`<br/>
-    Optional, if not specified, the install name should be inferred following the same procedure used to compute default image and resource names.
+- The user is able to provide the following uninstallation options through the HelmConfig:
+  - `releaseName`: `jkube.helm.release.name`<br/>
+    Optional, if not specified, the release name should be inferred following the same procedure used to compute default image and resource names.
 - If the uninstallation succeeds a message `${installName} uninstalled` is logged.
 - If the uninstallation fails, error message is logged.
 

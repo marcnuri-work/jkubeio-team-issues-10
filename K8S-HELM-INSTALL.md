@@ -14,8 +14,8 @@ JKube Kit exposes a new method `install` that installs the chart available in th
 
 - The installation is performed by executing [helm-java `install` command](https://github.com/manusa/helm-java#install).
 - The user is able to provide the following installation options through the HelmConfig:
-  - `installName`: `jkube.helm.install.name`<br/>
-    Optional, if not specified, the install name should be inferred following the same procedure used to compute default image and resource names.
+  - `releaseName`: `jkube.helm.release.name`<br/>
+    Optional, if not specified, the release name should be inferred following the same procedure used to compute default image and resource names.
   - `installDependencyUpdate`: `jkube.helm.install.dependencyUpdate`<br/>
     Optional, if not provided should default to `true`.<br/>
     https://github.com/eclipse/jkube/issues/2110
