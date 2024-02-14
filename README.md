@@ -40,6 +40,9 @@ The list of proposed features is:
 - Helm: Install chart archive (k8s:helm-install)<br/>
   [K8s-HELM-INSTALL](K8S-HELM-INSTALL.md)<br/>
   https://github.com/eclipse/jkube/issues/2663
+- Helm: Uninstall chart archive (k8s:helm-uninstall)<br/>
+  [K8s-HELM-UNINSTALL](K8S-HELM-UNINSTALL.md)<br/>
+  https://github.com/eclipse/jkube/issues/2666
 
 ### Helm Maven/Gradle Plugin
 

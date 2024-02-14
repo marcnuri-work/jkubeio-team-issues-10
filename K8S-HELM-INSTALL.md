@@ -13,9 +13,9 @@ As an Eclipse JKube user, I want to be able to install the chart JKube generates
 JKube Kit exposes a new method `install` that installs the chart available in the coordinates (output directory, helm type, and so on -see `resolveTarballFile`-) provided in the `HelmConfig` argument.
 
 - The installation is performed by executing [helm-java `install` command](https://github.com/manusa/helm-java#install).
-- The user is able to provide the following installation options through the HelmConfig
+- The user is able to provide the following installation options through the HelmConfig:
   - `installName`: `jkube.helm.install.name`<br/>
-    Optional, if not provided should use the `.generateName()` flag.
+    Optional, if not specified, the install name should be inferred following the same procedure used to compute default image and resource names.
   - `installDependencyUpdate`: `jkube.helm.install.dependencyUpdate`<br/>
     Optional, if not provided should default to `true`.<br/>
     https://github.com/eclipse/jkube/issues/2110
@@ -28,7 +28,7 @@ JKube Kit exposes a new method `install` that installs the chart available in th
   - `lastDeployed`
 - If installation fails, error message is logged
 
-### Maven plugins 
+### Maven plugins
 
 The Kubernetes Maven Plugin and OpenShift Maven Plugin expose a new `helm-install` goal in a `HelmInstallMojo` and `OpenshiftHelmInstallMojo` that extends the basic `HelmMojo` (following a similar approach to that of `HelmPushMojo` and `HelmLintMojo`).
 
@@ -42,10 +42,12 @@ The Kubernetes Gradle Plugin and OpenShift Gradle Plugin expose a new `helmInsta
 
 Individual tests should be added for the new tasks and also for the plugins to verify task precedence.
 
-An integration test (`HelmInstallIT`) proves that the task can be executed both, with a successful and a failed installation.
+An [e2e test](https://github.com/jkubeio/jkube-integration-tests) proves that the task can be executed both, with a successful and a failed installation.
 
 ### Documentation
 
 The documentation exposes for each of the Maven, Gradle, Kubernetes, and OpenShift plugins the new install goal/task.
 
 It includes a section with the installation options that can be provided in the `HelmConfig` argument and properties.
+
+Documentation should be reviewed to replace any reference to the `helm install` CLI command with the new `helm-install` goal/task.
